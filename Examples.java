@@ -7,11 +7,6 @@ public class Examples {
         System.out.println(ELS);
         System.out.println(ELS.indexOf("2"));
 
-				//Object Instantiation and Inheritance Examples
-				DECAOfficer Dylan = new DECAOfficer(17, "Dylan", 4000);
-				System.out.println("Age: " + Dylan.getAge());
-				System.out.println("Name: " + Dylan.getName());
-
 			//Gotta remember it's boolean not bool from C++
 			boolean a = true;
 			System.out.println("a is " + a);
@@ -50,7 +45,7 @@ public class Examples {
 			allStore.add(1);
 
 			//Math Stuff
-			System.out.println("Random: " + Math.random());
+			System.out.println("Random: " + random());
 			System.out.println("Sqrt of 25: " + Math.sqrt(25));
 			System.out.println("Abs. Val. of -5: " + Math.abs(-5));
 
@@ -63,7 +58,21 @@ public class Examples {
 			}
 			System.out.print("\n");
 
-			
+			//Enhanced for loops
+			container.add("Frank Ocean");
+			container.add("Andre 3000");
+			for(String s : container) {
+				System.out.println(s);
+			}
+
+			//Object Instantiation and Inheritance Examples
+			DECAOfficer Dylan = new DECAOfficer(16, "Dylan", 4000);
+			System.out.println("Dylan Name: " + Dylan.getName());
+			System.out.println("Dylan Age: " + Dylan.getAge());
+			System.out.println("Updating...");
+			Dylan.setAge(17);
+			System.out.println("Dylan Age: " + Dylan.getAge());
+
     }
 
 		//Making a static method
