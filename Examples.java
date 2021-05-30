@@ -48,8 +48,14 @@ public class Examples {
 			ArrayList<Object> allStore = new ArrayList<Object>();
 			allStore.add("Test");
 			allStore.add(1);
+
+			//Math Stuff
+			System.out.println("Random: " + Math.random());
+			System.out.println("Sqrt of 25: " + Math.sqrt(25));
+			System.out.println("Abs. Val. of -5: " + Math.abs(-5));
     }
 
+		//Making a static method
 		static void Print2DArray(int[][] arr) {
 			for(int i = 0; i < arr.length; i++) {
 				for(int j = 0; j < arr[0].length; j++) {
