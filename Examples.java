@@ -45,7 +45,7 @@ public class Examples {
 			allStore.add(1);
 
 			//Math Stuff
-			System.out.println("Random: " + random());
+			System.out.println("Random: " + Math.random());
 			System.out.println("Sqrt of 25: " + Math.sqrt(25));
 			System.out.println("Abs. Val. of -5: " + Math.abs(-5));
 
@@ -73,6 +73,10 @@ public class Examples {
 			Dylan.setAge(17);
 			System.out.println("Dylan Age: " + Dylan.getAge());
 
+			//Polymorphism Test
+			Person Bob = new Person(25, "Bob");
+			System.out.println(Bob);
+			System.out.println(Dylan);
     }
 
 		//Making a static method
