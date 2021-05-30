@@ -1,4 +1,3 @@
-import java.util.List;
 import java.util.ArrayList;
 
 public class Examples {
@@ -8,13 +7,14 @@ public class Examples {
         System.out.println(ELS);
         System.out.println(ELS.indexOf("2"));
 
+				//Object Instantiation and Inheritance Examples
 				DECAOfficer Dylan = new DECAOfficer(17, "Dylan", 4000);
-				System.out.println(Dylan.getAge());
-				System.out.println(Dylan.getName());
+				System.out.println("Age: " + Dylan.getAge());
+				System.out.println("Name: " + Dylan.getName());
 
-
+			//Gotta remember it's boolean not bool from C++
 			boolean a = true;
-			System.out.println(a);
+			System.out.println("a is " + a);
 
 			int[] numbers = new int[4];
 			int[][] moreNumbers = new int[4][4];
@@ -24,6 +24,30 @@ public class Examples {
 														 };
 
 		 	Print2DArray(presetNumbers);
+
+
+			//ArrayLists
+			ArrayList<String> container = new ArrayList<String>();
+			container.add("Frank Ocean");
+			container.add("Andre 3000");
+			System.out.println("Size: " + container.size());
+			System.out.println(container.get(0));
+			System.out.println(container.get(1));
+			container.remove(1);
+			System.out.println("Size: " + container.size());
+			container.set(0, "Kendrick Lamar");
+			System.out.println(container.get(0));
+			System.out.println(container);
+
+			//Wrapper Classes
+			ArrayList<Integer> intStorage = new ArrayList<Integer>();
+			intStorage.add(1);
+			System.out.println(intStorage);
+
+			//Storing anything in ArrayLists
+			ArrayList<Object> allStore = new ArrayList<Object>();
+			allStore.add("Test");
+			allStore.add(1);
     }
 
 		static void Print2DArray(int[][] arr) {
