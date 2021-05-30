@@ -53,6 +53,17 @@ public class Examples {
 			System.out.println("Random: " + Math.random());
 			System.out.println("Sqrt of 25: " + Math.sqrt(25));
 			System.out.println("Abs. Val. of -5: " + Math.abs(-5));
+
+			//While Loops
+			int x = 0;
+
+			while(x < 10) {
+				System.out.print(x);
+				x++;
+			}
+			System.out.print("\n");
+
+			
     }
 
 		//Making a static method
