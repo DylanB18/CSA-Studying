@@ -77,6 +77,9 @@ public class Examples {
 			Person Bob = new Person(25, "Bob");
 			System.out.println(Bob);
 			System.out.println(Dylan);
+
+			Person Amy = new DECAOfficer(17, "Amy", 7000);
+			System.out.println(Amy);
     }
 
 		//Making a static method
